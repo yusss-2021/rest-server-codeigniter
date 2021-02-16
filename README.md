@@ -1,6 +1,6 @@
 # simple rest server using codeigniter
 
-**table of contents**
+**table of contents**<br>
 1.List Endpoint<br>
 2.deficiency<br>
 3.browser prefilight handling<br>
@@ -8,44 +8,44 @@
 
 ## List Endpoint
 
-// client
-GET rest-server-codeingiter/
-GET  rest-server-codeigniter/id
-// admin
-GET rest-server-codeigniter/admin/
-POST rest-server-codeigniter/admin/
-GET rest-server-codeigniter/admin/news/
-DELETE rest-server-codeigniter/admin/news/id
-GET rest-server-codeigniter/admin/news/id
-PUT  rest-server-codeigniter/admin/news/id
+// client<br>
+GET rest-server-codeingiter/<br>
+GET  rest-server-codeigniter/id<br>
+// admin<br>
+GET rest-server-codeigniter/admin/<br>
+POST rest-server-codeigniter/admin/<br>
+GET rest-server-codeigniter/admin/news/<br>
+DELETE rest-server-codeigniter/admin/news/id<br>
+GET rest-server-codeigniter/admin/news/id<br>
+PUT  rest-server-codeigniter/admin/news/id<br>
+<br>
+## deficiency<br>
 
-## deficiency
+1. No login autentification<br>
 
-1. No login autentification
+## browser prefilight handling<br>
 
-## browser prefilight handling
+Check the server if it supports cors and<br>
+prefilight handling on codeigniter<br>
 
-Check the server if it supports cors and
-prefilight handling on codeigniter
-
-function options()
-    {
-        $this->output
-            ->set_status_header(200)
-            ->set_header("Access-Control-Allow-Origin:http://localhost:8080")
-            ->set_header("Access-Control-Allow-Headers:Origin,Content-Type")
-            ->set_header("Access-Control-Allow-Methods:Delete,PUT,OPTIONS")
-            ->set_header("Origin")
-            ->set_header("Access-Control-Request-Method")
-            ->set_header("Access-Control-Request-Headers")
-            ->_display();
-        exit();
-    }
+function options()<br>
+    {<br>
+        $this->output<br>
+            ->set_status_header(200)<br>
+            ->set_header("Access-Control-Allow-Origin:http://localhost:8080")<br>
+            ->set_header("Access-Control-Allow-Headers:Origin,Content-Type")<br>
+            ->set_header("Access-Control-Allow-Methods:Delete,PUT,OPTIONS")<br>
+            ->set_header("Origin")<br>
+            ->set_header("Access-Control-Request-Method")<br>
+            ->set_header("Access-Control-Request-Headers")<br>
+            ->_display();<br>
+        exit();<br>
+    }<br>
     
- ## Refrence
+ ## Refrence<br>
  
- https://www.codecademy.com/articles/what-is-rest
- https://livebook.manning.com/book/cors-in-action/chapter-4/13
- https://fetch.spec.whatwg.org/#origin-header
+ https://www.codecademy.com/articles/what-is-rest<br>
+ https://livebook.manning.com/book/cors-in-action/chapter-4/13<br>
+ https://fetch.spec.whatwg.org/#origin-header<br>
 
 
