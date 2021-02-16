@@ -1,10 +1,10 @@
 # simple rest server using codeigniter
 
 **table of contents**
-1.List Endpoint
-2.deficiency
-3.browser prefilight handling
-4.Refrence
+1.List Endpoint<br>
+2.deficiency<br>
+3.browser prefilight handling<br>
+4.Refrence<br>
 
 ## List Endpoint
 
